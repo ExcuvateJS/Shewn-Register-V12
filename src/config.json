@@ -1,0 +1,39 @@
+{
+    "bots":{
+        "footer":"Shewn? 🧡 Register",
+        "VoiceChannel":"",
+        "activity":"Shewn? 🧡 Register",
+        "status":"idle",
+        "type":"watching"
+    },
+
+    "roles":{
+      "owner": "OWNER SPEAR ROL ID",
+      "abality": "ABALITY SPEAR ROL ID",
+      "register":"REGISTER SPEAR ROL ID",
+      "erkek1":"GOZUKUCEK MAN ROL ID",
+      "maleRoles":["MAN 1 ROL ID", "MAN 2 ROL ID"],
+      "kadın1":"GOZUKUCEK WOMAN ROL ID",
+      "femaleRoles":["WOMAN 1 ROL ID", "WOMAN 2 ROL ID"],
+      "unregisteres":"UNREGISTER ROL ID",
+      "booster":"BOOSTER ROL ID",
+      "family":"TAG ROL ID"
+    },
+
+    "giriş":{
+      "isim":"• İsim | Yaş [ISIM KOYMASINI ISTEMIYORSANIZ BOS BIRAKIN!]",
+      "hoşgeldinKanal":"WELCOME CHAT",
+      "generalchat":"CHAT ID",
+      "kurallar":"KURALLAR ID",
+      "SunucuAdı":"SUNUCU ADI",
+      "GuildID":"GUILD ID",
+      "taglog":"TAG LOG ID"
+    },
+
+    "taglar":{
+      "taglı":"TAGLI KAYIT OLUNCA ADININ BASINA KOYULUCAK TAG",
+      "tagsız":"•",
+      "tag":"TAG",
+      "etikettag": "ETIKET TAGI [YOKSA BOS BIRAKIN!]"
+    }
+}
