@@ -152,6 +152,25 @@ client.on("message", message => {
         }
     }
   });
+
+
+
+  client.on("userUpdate", async (oldUser, newUser) => {
+    if (oldUser.username !== newUser.username) {
+    const etikettag = config.taglar.etikettag
+    const sunucu = config.giriş.GuildID
+    const kanal = config.giriş.taglog
+    const rol = config.roles.family
+
+    if(!newUser.user.discriminator.includes(etikettag) && client.guilds.cache.get(sunucu).members.cache.get(newUser.id).roles.cache.has([rol])) {
+    await client.guilds.cache.get(sunucu).members.cache.get(newUser.id).roles.add(rol)
+    await client.channels.cache.get(kanal).send(new Discord.MessageEmbed().setColor("#ff0000").setFooter(config.bots.footer).setDescription(`**${newUser} Etiket Tagımızı Aldığı İçin Ona <@&${rol}> Rolünü Verdim.**`))
+    } else {
+      await client.guilds.cache.get(sunucu).members.cache.get(newUser.id).roles.remove(rol)
+      await client.channels.cache.get(kanal).send(new Discord.MessageEmbed().setColor("#ff0000").setFooter(config.bots.footer).setDescription(`**${newUser} Etiket Tagımızı Çıkardığı İçin Ondan <@&${rol}> Rolünü Aldım.**`))
+    }
+}
+});
 //--------------------------------------------------------------------------------
 
 
